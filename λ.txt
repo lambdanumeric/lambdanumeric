@@ -1,0 +1,28 @@
+λ = U+03BB
+
+Basics
+  λx.x        # function that does nothing
+  λx.(x x)    # function applying input to itself
+  λx.λy.(x y) # function applying latter input to former input
+
+Boolean
+  λa.λb.a = true
+  λa.λb.b = false
+  # common way to do boolean constants with λ
+  # from that result boolean not, and etc.
+  
+  λa.((a false) true) = λa.((a λb.λc.c) λd.λe.d) = not a
+  
+  λa.λb.((a b) false) = λa.λb.((a b) λc.λd.d) = a and b
+  λa.λb.((a true) b) = λa.λb.((a λc.λd.c) b) = a or b
+
+Numbers
+  λa.λb.b = 0
+  λa.λb.(a b) = 1
+  λa.λb.(a (a b)) = 2
+  ·
+  ·
+  ·
+  # common way to do numbers in λ
+  # for number n:
+    # apply a function (b) n times to another function (a)
