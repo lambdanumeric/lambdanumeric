@@ -1,4 +1,4 @@
-UUID0 here. <br/>
+uuid0 here. <br/>
 Because that name was already given away I'm going with lambdanumeric here, because, why shouldn't there be lambdanumeric if there already is alphanumeric? Lambdas themselves, in programming and math, are interesting too. Check'em out when you have time!
 
 This file seems to almost be a .xml/.html-file, if I wouldn't know it to be a .md.
